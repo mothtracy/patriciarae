@@ -1,0 +1,67 @@
+/*DESKTOP*/
+body{
+	font-family: serif;
+	color: black;
+	background: white;
+}
+
+.main {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7em;
+    width: 700px;
+    height: 700px;
+}
+
+.image {
+	width: 100%;
+	margin: auto;
+}
+
+.center-container {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+}
+
+/*MOBILE*/
+
+@media screen and (max-width: 700px) {
+
+.main {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+   	margin-top: 7em;
+    border: none;
+    border-radius: 0px;
+    width: 95%;
+    height: 70%;
+}
+
+.image {
+	margin: auto;
+	width: 100%;
+}
+
+.center-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+}
+}
