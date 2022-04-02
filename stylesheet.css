@@ -20,6 +20,19 @@ body video {
 	opacity: 1.0;
 }
 
+#background img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	min-width: 100%;
+	min-height: 100%;
+	height: auto;
+    width: auto;
+	z-index: -100;
+}
+
 #menu {
     position: absolute;
     bottom: 0%;
@@ -48,6 +61,19 @@ body video {
 		height: 50px;
 		padding: 5px 5px 5px 5px;
 	}
+
+	#background img {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		min-width: 80%;
+		min-height: 80%;
+		height: auto;
+		width: auto;
+		z-index: -100;
+	}
 }
 
 @media screen and (max-width: 470px) {
@@ -64,5 +90,16 @@ body video {
 	#menu img {
 		height: 30px;
 		padding: 2px 2px 2px 2px;
+	}
+
+	#background img {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		height: 90%;
+		width: auto;
+		z-index: -100;
 	}
 }
