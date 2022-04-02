@@ -1,67 +1,46 @@
 /*DESKTOP*/
 body{
-	font-family: serif;
-	color: black;
-	background: white;
+	margin: 0;
+	overflow: hidden;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: 'simsunb.ttf';
+	font-size: 16px;
+	line-height: 24px;
+	overscroll-behavior: none;
 }
 
-.main {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7em;
-    width: 700px;
-    height: 700px;
-}
-
-.image {
-	width: 100%;
-	margin: auto;
-}
-
-.center-container {
+body video {
+	position: absolute;
+	top:0;
+	left:0;
 	width: 100%;
 	height: 100%;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-items: center;
+	object-fit: cover;
+	opacity: 1.0;
 }
+
+#menu {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    z-index: 2;
+  }
 
 /*MOBILE*/
 
 @media screen and (max-width: 700px) {
 
-.main {
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    justify-items: center;
-    align-items: center;
-    margin: auto;
-   	margin-top: 7em;
-    border: none;
-    border-radius: 0px;
-    width: 95%;
-    height: 70%;
-}
+	#menu {
+		position: absolute;
+		list-style: none;
+		margin: 0px;
+		color: #fff;
+		z-index: 2;
+		
+	}
 
-.image {
-	margin: auto;
-	width: 100%;
-}
-
-.center-container {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-items: center;
-}
+	#menu img {
+		height: 50px;
+	}
 }
